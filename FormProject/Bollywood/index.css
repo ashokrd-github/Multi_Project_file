@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" sans-serif;
+}
+body{
+    background: #333;
+    color: #ffff;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    background: #aaaa;
+    color: #ffff;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+header .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.search input{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.search button{
+    padding: 10px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background: #ff000f;
+    color: #ffff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.search button:hover{
+    color: #ffff;
+    background: #e45555;
+}
+/* .movie-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 40px;
+    
+} */
+.movieList{
+ background: #ffff;
+ padding: 40px;
+ margin: 10px;
+ flex-direction: row;
+ border-radius: 1rem;
+ align-items: center;
+ text-align: center;
+ color: #333;
+}
+.movieList img{
+    height: 450px;
+}
+
+/* Responsive Code in CSS */
+@media screen and(max-width:600px) {
+    header nav{
+        flex-direction: column;
+    }
+    header nav .search{
+        width: 80%;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" sans-serif;
+}
+body{
+    background: #341212;
+    color: #ffff;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #aaaa;
+    padding: 20px;
+}
+header nav h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+header nav form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+form input{
+    padding: 10px;
+    margin-right: 10px;
+    color: #000;
+    font-weight: bold;
+}
+form button{
+    padding: 10px;
+    color: #ffff;
+    font-weight: bold;
+    background: #f40202;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+form button:hover{
+    color: #ffff;
+    background: #c91e1e;
+}
+form input, form button{
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    align-items: center;
+   
+}
+.movie-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 40px;
+    width: 80%;
+    padding: 40px auto;
+    grid-gap: 40px;
+    margin: 40px auto;
+    text-align: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  
+}
+.movie-container img:hover{
+    transform: scale(1.02);
+}
+.movie-container img{
+    width: 300px;
+    box-shadow: 0 -5px -5px rgba(78, 73, 73, 0.1) 5px 5px 10px rgba(34, 34, 34, 0.5);
+    border-radius: 6px;
+    border: 2px solid #000;
+}
+/* Responsive code in CSS */
+@media screen and(max-width: 600px) {
+    header nav{
+        flex-direction: column;
+    }
+    header nav form{
+        width: 80%;
+        margin-top: 20px;
+    }
+}
